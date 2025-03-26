@@ -1,4 +1,15 @@
-export const carsInStock = [
+type Car = {
+  id: string;
+  brand: string;
+  model: string;
+  manufacturingYear: number;
+  price: number;
+  currency: string;
+  color: string;
+  exteriorDetails: string[];
+};
+
+export const carsInStock: Car[] = [
   {
     id: "1",
     brand: "BMW",
