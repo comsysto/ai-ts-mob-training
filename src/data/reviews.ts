@@ -5,4 +5,5 @@ export const reviews: Record<string, string[]> = {
     "Owning the BMW 320i has been a delightful experience. From the moment I drove it out of the dealership, I've been impressed by its performance and features. The black color combined with the sports package and alloy wheels look amazing. The LED headlights and heated side mirrors are practical features that enhance daily driving. Its price of 35,000 EUR feels justified given the quality and technology included. The driving experience is smooth, and the car handles brilliantly. It’s the ideal choice for those seeking luxury at a reasonable price.",
     "I'm truly enjoying my 2022 BMW 320i. The exterior details such as the alloy wheels, tinted windows, and sports package really set it apart from other cars on the road. The LED headlights are very effective at night, and the heated side mirrors are a nice touch during colder months. The car is priced at 35,000 EUR, which I find reasonable considering the high-quality materials and engineering that BMW offers. It’s a perfect blend of comfort, style, and performance. I couldn't be happier with my purchase!"
   ]
+  // TODO: Add reviews for all cars
 };
