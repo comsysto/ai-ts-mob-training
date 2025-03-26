@@ -1,0 +1,10 @@
+# Task 1: Basic prompt #####################################
+GET localhost:3000/execute-prompt?prompt="How are you today?"
+
+###
+
+# Task 2: System prompts ##########################
+
+GET localhost:3000/stateless-sales-agent?prompt="What are the latest fashion trends"
+###
+GET localhost:3000/stateless-sales-agent?prompt="Recommend a car for me"
