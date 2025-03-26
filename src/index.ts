@@ -11,7 +11,22 @@ app.get("/", (c) => {
   return c.text("Hello World!");
 });
 
-app.get("/chat", async (c) => {
+app.get("/task1", async (c) => {
+  const inputPrompt = c.req.query("prompt");
+
+  if (inputPrompt === undefined) {
+    throw new HTTPException(422, { message: "Query parameter 'prompt' is required" });
+  }
+
+  const { text } = await generateText({
+    model: openai("gpt-4o"),
+    prompt: inputPrompt
+  });
+
+  return c.text(text);
+});
+
+app.get("/task2", async (c) => {
   const inputPrompt = c.req.query("prompt");
 
   if (inputPrompt === undefined) {
