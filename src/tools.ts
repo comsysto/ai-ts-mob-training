@@ -3,6 +3,7 @@ import { carsInStock } from "./data/stock.js";
 import { z } from "zod";
 import { openai } from "@ai-sdk/openai";
 import { getImageURL } from "./images/images.js";
+import { searchReviews } from "./rag/embeddings.js";
 
 export const carsInStockTool = tool({
   description: "Returns all cars in stock.",
@@ -44,5 +45,15 @@ export const generateCarImageTool = tool({
     });
 
     return getImageURL(image.uint8Array);
+  }
+});
+
+export const retrieveReviewsTool = tool({
+  description: "Returns relevant reviews with carIds for given search term",
+  parameters: z.object({
+    searchTerm: z.string().describe("searchTerm for retrieving relevant reviews")
+  }),
+  execute: async ({ searchTerm }) => {
+    return searchReviews(searchTerm);
   }
 });
