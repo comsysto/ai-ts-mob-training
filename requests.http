@@ -1,10 +1,18 @@
 # Task 1: Basic prompt #####################################
-GET localhost:3000/execute-prompt?prompt="How are you today?"
+GET localhost:3000/task1?prompt="How are you today?"
 
 ###
 
 # Task 2: System prompts ##########################
 
-GET localhost:3000/stateless-sales-agent?prompt="What are the latest fashion trends"
+GET localhost:3000/task2?prompt="What are the latest fashion trends"
 ###
-GET localhost:3000/stateless-sales-agent?prompt="Recommend a car for me"
+GET localhost:3000/task2?prompt="Recommend a car for me"
+
+###
+
+# Task 3: Chat Memory ##########################
+
+GET localhost:3000/task3?prompt="Hi my name is Nick"
+###
+GET localhost:3000/task3?prompt="What's my name?"
