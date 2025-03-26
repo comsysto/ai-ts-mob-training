@@ -18,8 +18,13 @@ GET localhost:3000/task3?prompt="Hi my name is Nick"
 GET localhost:3000/task3?prompt="What's my name?"
 
 ###
-# Task 4: Toool Calling ##########################
+# Task 4: Tool Calling ##########################
 GET localhost:3000/task4?prompt="What cars do you have in stock?"
 
+# Task 5: Image Generation ##########################
+
 ###
-GET localhost:3000/task4?prompt="I want to buy the Porsche 911 and the Lexus IS."
+GET localhost:3000/task5?prompt="which options do you have?"
+
+###
+GET localhost:3000/task5?prompt="how does the bmw look like?"
