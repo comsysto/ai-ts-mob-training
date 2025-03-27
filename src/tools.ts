@@ -54,6 +54,6 @@ export const retrieveReviewsTool = tool({
     searchTerm: z.string().describe("searchTerm for retrieving relevant reviews")
   }),
   execute: async ({ searchTerm }) => {
-    return searchReviews(searchTerm);
+    return searchReviews(searchTerm, 10);
   }
 });
