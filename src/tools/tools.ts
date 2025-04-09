@@ -1,9 +1,9 @@
 import { tool, experimental_generateImage as generateImage } from "ai";
-import { carsInStock } from "./data/stock.js";
+import { carsInStock } from "../data/stock.js";
 import { z } from "zod";
 import { openai } from "@ai-sdk/openai";
-import { getImageURL } from "./images/images.js";
-import { searchReviews } from "./rag/embeddings.js";
+import { getImageURL } from "../images/images.js";
+import { searchReviews } from "../rag/embeddings.js";
 
 export const carsInStockTool = tool({
   description: "Returns all cars in stock.",
